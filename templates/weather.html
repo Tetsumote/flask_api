@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/weather" method="POST">
+        <input type="text" name="city" placeholder="weather search">
+        <input type="submit" value="Submit">
+      </form>
+    <h1>Headlines</h1>
+    <h2>Current weather</h2>
+    <p>City: <b>{{weather.city}}</b>  {{weather.country}}</p>
+    <p>{{weather.description}} |{{weather.temperature}}℃</p>   
+</body>
+</html>
